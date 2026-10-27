@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dashboard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Overview</title>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="logo.png" alt="Issou Brand Logo" onerror="this.src='https://placehold.co/50x50?text=IB'">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <button id="logout">Logout</button>
+    </header> 
+    <section class="main">
+        <sidebar>
+            <nav>
+                <button class="active"><a href="dashboard.html">Dashboard</a></button> 
+                <button><a href="products.html">Products</a></button>
+                <button><a href="orders.html">Orders</a></button>
+            </nav>
+        </sidebar>
+        <main class="dashboard-main">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">P</div>
+                    <div class="stat-info">
+                        <h3>Total Products</h3>
+                        <div class="stat-number" id="totalProducts">0</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">M</div>
+                    <div class="stat-info">
+                        <h3>This Month Added</h3>
+                        <div class="stat-number" id="monthlyAdded">0</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">O</div>
+                    <div class="stat-info">
+                        <h3>Orders Received</h3>
+                        <div class="stat-number" id="ordersReceived">0</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">C</div>
+                    <div class="stat-info">
+                        <h3>Orders Processed</h3>
+                        <div class="stat-number" id="ordersProcessed">0</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">S</div>
+                    <div class="stat-info">
+                        <h3>Monthly Sales</h3>
+                        <div class="stat-number" id="monthlySales">0 DZD</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recent-section">
+                <div class="section-header">
+                    <h2>Recent Orders</h2>
+                    <a href="orders.html" class="view-all">View All</a>
+                </div>
+                <div class="recent-table-container">
+                    <table class="recent-table">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recentOrdersBody">
+                            <tr class="empty-row">
+                                <td colspan="4">No orders yet. Orders will appear here once placed.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="dashboard.js"></script>
+</body>
+</html>
