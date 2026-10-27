@@ -38,7 +38,7 @@ header img {
     height: 50px;
     cursor: pointer;
     object-fit: cover;
-    background: linear-gradient(135deg, #0fada5, #0d9488);
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
     padding: 2px;
 }
 
@@ -111,11 +111,11 @@ nav button a {
 }
 
 nav button:hover {
-    background-color: #eef2ff;
+    background-color: #fef2f2;
 }
 
 nav button.active {
-    background-color: #0fada5;
+    background-color: #dc2626;
 }
 
 nav button.active a {
@@ -160,12 +160,12 @@ nav button.active a {
     font-weight: bold;
     width: 50px;
     height: 50px;
-    background: #eef2ff;
+    background: #fef2f2;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0fada5;
+    color: #dc2626;
 }
 
 .stat-info h3 {
@@ -293,7 +293,7 @@ nav button.active a {
 
 /* Buttons */
 .add-btn {
-    background: linear-gradient(135deg, #0fada5, #0d9488);
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
     border: none;
     color: white;
     padding: 8px 20px;
@@ -306,7 +306,7 @@ nav button.active a {
 
 .add-btn:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(15, 173, 165, 0.3);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 
 /* Action Buttons */
@@ -481,7 +481,7 @@ nav button.active a {
 
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
     outline: none;
-    border-color: #0fada5;
+    border-color: #dc2626;
 }
 
 .form-group textarea {
@@ -505,7 +505,7 @@ nav button.active a {
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #0fada5, #0d9488);
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
     border: none;
     color: white;
     padding: 8px 20px;
@@ -595,8 +595,8 @@ nav button.active a {
 }
 
 .image-preview:hover {
-    border-color: #0fada5;
-    background-color: #f0fdfa;
+    border-color: #dc2626;
+    background-color: #fef2f2;
 }
 
 .image-preview img {
@@ -670,8 +670,8 @@ nav button.active a {
 }
 
 .size-checkbox:hover, .color-checkbox:hover {
-    background-color: #eef2ff;
-    border-color: #0fada5;
+    background-color: #fef2f2;
+    border-color: #dc2626;
 }
 
 .size-checkbox input, .color-checkbox input {
@@ -681,8 +681,8 @@ nav button.active a {
 }
 
 .size-checkbox:has(input:checked), .color-checkbox:has(input:checked) {
-    background-color: #0fada5;
-    border-color: #0fada5;
+    background-color: #dc2626;
+    border-color: #dc2626;
     color: white;
 }
 
